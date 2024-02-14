@@ -4,6 +4,11 @@ variable "app_name" {
   default     = "mage-data-prep"
 }
 
+variable "credentials_file_path" {
+  description = "Path to the Google Cloud credentials file"
+  type        = string
+}
+
 variable "container_cpu" {
   description = "Container cpu"
   default     = "2000m"
